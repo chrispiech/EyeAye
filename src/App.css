@@ -27,19 +27,30 @@
   to { transform: rotate(360deg); }
 }
 
-
-.E.right {
-  transform : rotate(0deg);
+.cardTest {
+  width:373px;
+  height:236px;
+  background-color:blue;
 }
 
-.E.down {
-  transform: rotate(90deg);
+.E-div {
+  height:500px;
 }
 
-.E.left {
-  transform: rotate(180deg);
+.example-enter {
+  opacity: 0.01;
 }
 
-.E.up {
-  transform: rotate(-90deg);
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 50000ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
 }
